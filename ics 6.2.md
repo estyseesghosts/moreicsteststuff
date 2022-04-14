@@ -12,7 +12,7 @@
 #2 - 
 ---
 a:
->```java
+```java
 public void plusEquals (Fraction other) 
 {
     this.num = (this.num * other.den) + (other.num * this.den);
@@ -21,7 +21,7 @@ public void plusEquals (Fraction other)
 ```
 
 b:
->```java
+```java
 public void plus (Fraction other) 
 {
     fraction newFraction = new Fraction();
@@ -32,7 +32,7 @@ public void plus (Fraction other)
 ```
 
 c:
->```java
+```java
 public void reduce () 
 {
     for (int i = num; i >= 1; i--) 
@@ -54,7 +54,7 @@ public void reduce ()
 ---
 
 a:
->```java
+```java
 public double modulus ()
 {
     return Math.sqrt(Math.pow(this.realNumber,2) + Math.pow(this.imaginaryNumber, 2));
@@ -62,7 +62,7 @@ public double modulus ()
 ```
 
 b:
->```java
+```java
 public void scale (double scale) 
 {
     this.realNumber *= scale;
@@ -74,7 +74,7 @@ public void scale (double scale)
 ---
 
 a: 
->```java
+```java
 public Complex add (Complex other)
 {
     return new Complex(other.realNumber + this.realNumber, other.imaginaryNumber + this.imaginaryNumber);
@@ -82,7 +82,7 @@ public Complex add (Complex other)
 ```
 
 b: 
->```java
+```java
 public Complex multiply (Complex other)
 {
     return new Complex(other.realNumber * this.realNumber, other.imaginaryNumber * this.imaginaryNumber);
@@ -93,7 +93,7 @@ public Complex multiply (Complex other)
 ---
 
 a:
->```java
+```java
 public double area()
 {
     return Math.PI * Math.pow(this.radius, 2);
@@ -101,7 +101,7 @@ public double area()
 ```
 
 b:
->```java
+```java
 public Circle smaller (Circle other)
 {
     if (other.radius <= this.radius) return other;
@@ -110,7 +110,7 @@ public Circle smaller (Circle other)
 ```
 
 c:
->```java
+```java
 public boolean inside (Circle other)
 {
     if ((this.distanceFrom(other) + this.radius) <= other.radius) return true;
